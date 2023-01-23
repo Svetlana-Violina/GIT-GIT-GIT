@@ -1,0 +1,512 @@
+{
+  "id": "9ae9eab6-7d20-4024-b3a8-c43dfc281c97",
+  "version": "2.0",
+  "name": "SV_Hillel_qauto",
+  "url": "https://qauto2.forstudy.space",
+  "tests": [{
+    "id": "864c89de-4ad3-4090-814e-f4668924ad2c",
+    "name": "Check Log out",
+    "commands": [{
+      "id": "52910f24-c04d-4cfc-9fcd-21ed4a2f248c",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b10ecbf-701b-4ab8-9dbd-f088daf0de15",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1270x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fc58449-fe08-4a46-b635-b240de3b80d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f563e37f-01be-44d3-931d-57660f698055",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(6)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d19e3d0-5f85-4ba4-982c-ed6b9dbafa3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-white",
+      "targets": [
+        ["css=.btn-outline-white", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d20fa188-f182-4383-97b1-7adbbc930c57",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinEmail",
+      "targets": [
+        ["id=signinEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signinEmail", "css:finder"],
+        ["xpath=//input[@id='signinEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "violina.svetlana@gmail.com"
+    }, {
+      "id": "d8842ece-32b6-4c79-aa32-0871c7825145",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinPassword",
+      "targets": [
+        ["id=signinPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signinPassword", "css:finder"],
+        ["xpath=//input[@id='signinPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5OXPTySusbQz1TS"
+    }, {
+      "id": "327d0d6c-f53f-43ab-a283-d7bf67484f26",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "841fcc65-ee65-4b1b-a7d6-89d1bdc11267",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[3]/button[2]",
+      "targets": [
+        ["css=.panel-layout", "css:finder"],
+        ["xpath=//app-panel-layout/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7d8850-0b0e-4071-9fa4-7bf5169d533a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[1]/h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Garage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e6c20b-3339-4671-a181-27d8cd1c3bc1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body//div[1]/h1",
+      "targets": [],
+      "value": "Garage"
+    }]
+  }, {
+    "id": "65139403-1270-45ca-a8d4-efe7367a9d72",
+    "name": "Check Add car",
+    "commands": [{
+      "id": "4452361c-6ba8-4b36-937f-8aac0bf09c50",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a50c519a-8dff-4529-98f8-cf64121f8b1c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1274x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "389a5962-1817-47fa-bec7-bb5c5ac31109",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/app-garage/div/div[1]/button",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": "Add car"
+    }, {
+      "id": "617fbbfa-8bb9-4417-877d-128385c11ad4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//app-add-car-form/form/div[1]/label",
+      "targets": [
+        ["id=addCarBrand", "id"],
+        ["name=carBrandId", "name"],
+        ["css=#addCarBrand", "css:finder"],
+        ["xpath=//select[@id='addCarBrand']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Brand"
+    }, {
+      "id": "0cea5c7f-e3dd-4998-9f9a-c287aa2c7fb4",
+      "comment": "",
+      "command": "select",
+      "target": "//*[@id=\"addCarBrand\"]",
+      "targets": [
+        ["id=addCarBrand", "id"],
+        ["name=carBrandId", "name"],
+        ["css=#addCarBrand", "css:finder"],
+        ["xpath=//select[@id='addCarBrand']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=Ford"
+    }, {
+      "id": "6e049530-29fb-48b8-8ad4-1df3c2b2a839",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarModel",
+      "targets": [
+        ["id=addCarModel", "id"],
+        ["name=carModelId", "name"],
+        ["css=#addCarModel", "css:finder"],
+        ["xpath=//select[@id='addCarModel']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bbefb30-453c-46b2-ba27-841f63f2922a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/app-add-car-form/form/div[2]/label",
+      "targets": [
+        ["css=.form-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Model')]", "xpath:innerText"]
+      ],
+      "value": "Model"
+    }, {
+      "id": "a5e5e097-8ee9-4706-82c0-2ef7665aac3a",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@id=\"addCarModel\"]",
+      "targets": [
+        ["id=addCarModel", "id"],
+        ["name=carModelId", "name"],
+        ["css=#addCarModel", "css:finder"],
+        ["xpath=//select[@id='addCarModel']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=Mondeo"
+    }, {
+      "id": "ae43dc53-1bcc-4285-a022-ce201603cbc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c9fe6c8-422e-4e58-ab33-5869833bfea7",
+      "comment": "",
+      "command": "type",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "fb3e0b71-4535-48c9-9fc3-5002a140ee08",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[3]/button[2]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad112656-02cc-44d4-92fd-ce3a62166c6b",
+    "name": "Check Settings",
+    "commands": [{
+      "id": "a2858ecf-4e4b-4a2c-afac-a4fb71ec7f81",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f65eade-e77d-4c1f-8331-2b9a1cd363e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x674",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9e15158-fe82-4d82-9e28-fdcf29c42b6a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div/a[2]",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=.-active:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Settings')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/settings')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76c31299-31b8-4c23-a1ce-8a9cbc158d02",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"emailChangeEmail\"]",
+      "targets": [
+        ["id=emailChangeEmail", "id"],
+        ["name=email", "name"],
+        ["css=#emailChangeEmail", "css:finder"],
+        ["xpath=//input[@id='emailChangeEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "violina.svetlana@gmail.com"
+    }, {
+      "id": "0ef1e499-dddd-47b5-ae18-6ec60c5036c4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"emailChangePassword\"]",
+      "targets": [
+        ["id=emailChangePassword", "id"],
+        ["name=password", "name"],
+        ["css=#emailChangePassword", "css:finder"],
+        ["xpath=//input[@id='emailChangePassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5OXPTySusbQz1TS"
+    }, {
+      "id": "1432d4ec-12e5-4a49-b719-befc12ff5ad5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/app-root/app-global-layout/div//app-change-email-form/form/div[2]/label",
+      "targets": [],
+      "value": "Your password"
+    }]
+  }, {
+    "id": "2cec8e65-ff65-4eb4-ab77-8634329717a4",
+    "name": "Check Add fuel exp",
+    "commands": [{
+      "id": "845844f5-d272-4761-947d-58e989d7b4f8",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a0dd580-4c1e-48cd-bc25-3bb726dfdf99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1274x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e25b2f1a-c8fc-4a4e-a8a8-34d80b00aa85",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[1]/nav/a[2]",
+      "targets": [
+        ["css=.sidebar > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Fuel expenses')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/expenses')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe22e24f-951d-4477-96b7-6862e28d0d59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add an expense')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5699df8-9dda-42e9-a659-93cde43817a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=addExpenseLiters",
+      "targets": [
+        ["id=addExpenseLiters", "id"],
+        ["name=liters", "name"],
+        ["css=#addExpenseLiters", "css:finder"],
+        ["xpath=//input[@id='addExpenseLiters']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0747386-f119-419a-98e4-2c87867041de",
+      "comment": "",
+      "command": "type",
+      "target": "id=addExpenseLiters",
+      "targets": [
+        ["id=addExpenseLiters", "id"],
+        ["name=liters", "name"],
+        ["css=#addExpenseLiters", "css:finder"],
+        ["xpath=//input[@id='addExpenseLiters']", "xpath:attributes"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "4568539f-5b3a-4fce-acfe-dab611ddc405",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"addExpenseTotalCost\"]",
+      "targets": [
+        ["id=addExpenseTotalCost", "id"],
+        ["name=totalCost", "name"],
+        ["css=#addExpenseTotalCost", "css:finder"],
+        ["xpath=//input[@id='addExpenseTotalCost']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e7b98e3-b66b-4f2b-8826-9d6a2c679885",
+      "comment": "",
+      "command": "type",
+      "target": "id=addExpenseTotalCost",
+      "targets": [
+        ["id=addExpenseTotalCost", "id"],
+        ["name=totalCost", "name"],
+        ["css=#addExpenseTotalCost", "css:finder"],
+        ["xpath=//input[@id='addExpenseTotalCost']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "685f6fc8-ac3f-45b6-b3ac-003b5d35e52e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[3]/button[2]",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cae7d10-fcfd-401a-ac68-4114c15f5a1c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//html/body//div[3]/button[2]",
+      "targets": [],
+      "value": "50000"
+    }, {
+      "id": "5409c891-39d0-4236-8cf6-86978ba1cab0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body//div[3]/button[2]",
+      "targets": [],
+      "value": "Add"
+    }]
+  }, {
+    "id": "af436b5e-1d2f-4e11-968f-07c8293b6168",
+    "name": "Check instructions",
+    "commands": [{
+      "id": "d409f6bf-33db-4a25-b9f4-6a17cef45ff5",
+      "comment": "",
+      "command": "open",
+      "target": "/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08d22131-c2e1-405d-b8a4-8a77134fe07e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1274x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95784ac3-a7c7-48a7-9466-e35ffb8b031f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body//div[1]/nav/a[3]",
+      "targets": [
+        ["css=.btn-white:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Instructions')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/instructions')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94de5161-8231-4d83-b778-6cadc114d782",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/app-root//div[2]/ul/li[1]/a/p",
+      "targets": [
+        ["css=.instruction-list_item:nth-child(1) .instruction-link_description", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Front windshield wipers on Audi TT')]", "xpath:innerText"]
+      ],
+      "value": "Front windshield wipers on Audi TT"
+    }, {
+      "id": "6d29f396-1528-4632-8053-b838e2e74e5a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-white:nth-child(3)",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "24b924c3-47f6-4821-8ac1-18a0303ebfc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Front windshield wipers on Audi TT",
+      "targets": [
+        ["linkText=Front windshield wipers on Audi TT", "linkText"],
+        ["css=.instruction-list_item:nth-child(1) > .instruction-link", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://qauto2.forstudy.space/public/instructions/audi/tt/Front windshield wipers on Audi TT.pdf')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Front windshield wipers on Audi TT')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1179",
+      "windowTimeout": 2000
+    }]
+  }],
+  "suites": [{
+    "id": "35bee34a-0b86-45ec-86b0-1017481eb2ed",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["864c89de-4ad3-4090-814e-f4668924ad2c"]
+  }],
+  "urls": ["https://qauto2.forstudy.space/"],
+  "plugins": []
+}
